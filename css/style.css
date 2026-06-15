@@ -518,29 +518,22 @@ img {
 .about-image-main {
   width: 100%;
   height: 450px;
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-secondary) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   overflow: hidden;
 }
 
-.about-image-main img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.about-image-main::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.about-image-main svg {
-  width: 200px;
-  height: 200px;
-  color: var(--primary-red);
-  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.55) 0%, rgba(22, 33, 62, 0.45) 100%);
 }
 
 .about-image-badge {
