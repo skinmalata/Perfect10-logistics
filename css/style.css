@@ -1358,6 +1358,10 @@ img {
     flex-direction: column;
   }
 
+  .hero-stats {
+    display: none !important;
+  }
+
   .mission-grid {
     grid-template-columns: 1fr;
   }
@@ -1375,7 +1379,7 @@ img {
   }
 
   .hero-stats {
-    display: none;
+    display: none !important;
   }
 
   .stat-number {
