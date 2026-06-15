@@ -518,7 +518,7 @@ img {
 .about-image-main {
   width: 100%;
   height: 450px;
-  background: linear-gradient(135deg, rgba(26, 26, 46, 0.55) 0%, rgba(22, 33, 62, 0.45) 100%), url('../images/hero-truck.jpg');
+  background-image: linear-gradient(135deg, rgba(26, 26, 46, 0.55) 0%, rgba(22, 33, 62, 0.45) 100%), url('../images/hero-truck.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1427,6 +1427,10 @@ img {
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .about-image-main {
+    height: 300px;
   }
 
   .about-features {
