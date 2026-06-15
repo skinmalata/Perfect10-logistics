@@ -1358,10 +1358,6 @@ img {
     flex-direction: column;
   }
 
-  .hero-stats {
-    display: none !important;
-  }
-
   .mission-grid {
     grid-template-columns: 1fr;
   }
@@ -1372,6 +1368,9 @@ img {
     background: linear-gradient(135deg, var(--dark) 0%, var(--dark-secondary) 50%, #1a1a2e 100%), url('../images/hero-terminal.jpg');
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: 0;
   }
 
   .hero-video {
@@ -1380,19 +1379,6 @@ img {
 
   .hero-stats {
     display: none !important;
-  }
-
-  .stat-number {
-    font-size: 22px;
-  }
-
-  .stat-label {
-    font-size: 10px;
-    letter-spacing: 0.5px;
-  }
-
-  .stat-item {
-    padding: 0 5px;
   }
 
   .mobile-menu-btn {
