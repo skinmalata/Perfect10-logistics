@@ -378,7 +378,7 @@ img {
 .stat-number {
   font-size: 36px;
   font-weight: 800;
-  color: var(--primary-red);
+  color: var(--white);
   display: block;
   line-height: 1;
 }
