@@ -527,6 +527,15 @@ img {
   overflow: hidden;
 }
 
+.about-image-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .about-image-main svg {
   width: 200px;
   height: 200px;
