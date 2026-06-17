@@ -1444,7 +1444,7 @@ img {
 }
 
 .service-detail-img.haulage-bg {
-  background: linear-gradient(135deg, rgba(58,42,26,0.2) 0%, rgba(55,45,13,0.2) 100%), url('../images/haulage.jpg');
+  background: linear-gradient(135deg, rgba(58,42,26,0.2) 0%, rgba(55,45,13,0.2) 100%), url('../images/hero-truck.jpg');
   background-size: cover;
   background-position: center;
 }
