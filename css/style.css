@@ -159,15 +159,9 @@ img {
 .logo-icon {
   width: 50px;
   height: 50px;
-  background: var(--primary-red);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-weight: bold;
-  font-size: 20px;
+  object-fit: contain;
   flex-shrink: 0;
+  border-radius: 8px;
 }
 
 .logo-text-wrap {
@@ -585,6 +579,145 @@ img {
   height: 20px;
   color: var(--primary-red);
   flex-shrink: 0;
+}
+
+/* ========================================
+   Perfect10 Luxury Homes Section
+   ======================================== */
+.homes-section {
+  background: var(--white);
+}
+
+.homes-section .container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.homes-image {
+  flex: 1;
+  position: relative;
+}
+
+.homes-image-main {
+  width: 100%;
+  height: 450px;
+  background-image: url('../images/gt.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.homes-content {
+  flex: 1;
+}
+
+.homes-content .section-header {
+  margin-bottom: 30px;
+}
+
+/* ========================================
+   Properties Page
+   ======================================== */
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.property-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.property-img {
+  height: 240px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.property-tag {
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.property-info {
+  padding: 25px;
+}
+
+.property-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.property-location {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.property-location::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%23C8102E' stroke-width='2.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") no-repeat center/contain;
+  vertical-align: middle;
+}
+
+.property-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary-red);
+  margin-bottom: 12px;
+}
+
+.property-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.property-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.property-features li {
+  background: var(--light-gray);
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* ========================================
@@ -1248,11 +1381,47 @@ img {
   background-size: cover;
   background-position: center;
 }
+
+.service-detail-img.realestate-bg {
+  background: linear-gradient(135deg, rgba(42,26,13,0.85) 0%, rgba(55,33,22,0.85) 100%), url('../images/hero-terminal.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.service-detail-img.realestate-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M30 5L10 20v35h15V35h10v20h15V20z'/%3E%3C/g%3E%3C/svg%3E");
+}
 .service-detail-img.bonded-bg::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='25' cy='25' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.service-detail-img.landverification-bg {
+  background: linear-gradient(135deg, rgba(13,42,71,0.85) 0%, rgba(22,55,89,0.85) 100%), url('../images/hero-terminal.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.service-detail-img.landverification-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='20' cy='20' r='2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.service-detail-img.propertyacquisition-bg {
+  background: linear-gradient(135deg, rgba(42,58,13,0.85) 0%, rgba(55,71,22,0.85) 100%), url('../images/hero-terminal.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.service-detail-img.propertyacquisition-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M25 10L10 25h5v15h20V25h5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .service-detail-img svg {
@@ -1329,7 +1498,8 @@ img {
     justify-content: center;
   }
 
-  .about-section .container {
+  .about-section .container,
+  .homes-section .container {
     flex-direction: column;
   }
 
@@ -1429,7 +1599,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .about-image-main {
+  .about-image-main,
+  .homes-image-main {
     height: 300px;
   }
 
