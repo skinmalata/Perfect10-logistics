@@ -109,22 +109,40 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const btn = contactForm.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
+      const formData = new FormData(contactForm);
       
       btn.textContent = 'Sending...';
       btn.disabled = true;
       
-      // Simulate form submission
-      setTimeout(() => {
-        btn.textContent = 'Message Sent!';
-        btn.style.background = '#28a745';
-        
+      fetch('send-mail.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => res.text())
+      .then(data => {
+        if (data === 'success') {
+          btn.textContent = 'Message Sent!';
+          btn.style.background = '#28a745';
+          contactForm.reset();
+        } else {
+          btn.textContent = 'Error! Try Again';
+          btn.style.background = '#dc3545';
+        }
         setTimeout(() => {
           btn.textContent = originalText;
           btn.style.background = '';
           btn.disabled = false;
-          contactForm.reset();
-        }, 2000);
-      }, 1500);
+        }, 3000);
+      })
+      .catch(() => {
+        btn.textContent = 'Error! Try Again';
+        btn.style.background = '#dc3545';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      });
     });
   }
 
