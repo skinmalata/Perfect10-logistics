@@ -1504,7 +1504,7 @@ img {
 }
 
 .service-detail-img.landverification-bg {
-  background: linear-gradient(135deg, rgba(13,42,71,0.25) 0%, rgba(22,55,89,0.25) 100%), url('../images/hero-terminal.jpg');
+  background: linear-gradient(135deg, rgba(13,42,71,0.25) 0%, rgba(22,55,89,0.25) 100%), url('../images/land.jpg');
   background-size: cover;
   background-position: center;
 }
