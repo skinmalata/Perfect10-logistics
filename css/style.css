@@ -1400,13 +1400,7 @@ img {
   background: var(--white);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: var(--shadow);
   margin-bottom: 30px;
-  transition: var(--transition);
-}
-
-.service-detail-card:hover {
-  box-shadow: var(--shadow-hover);
 }
 
 .service-detail-card:nth-child(even) {
@@ -1426,7 +1420,7 @@ img {
 
 /* Service-specific visual backgrounds - Image based with overlay */
 .service-detail-img.shipping-bg {
-  background: linear-gradient(135deg, rgba(26,42,58,0.8) 0%, rgba(13,33,55,0.8) 100%), url('../images/shipping.jpg');
+  background: linear-gradient(135deg, rgba(26,42,58,0.2) 0%, rgba(13,33,55,0.2) 100%), url('../images/shipping.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1438,7 +1432,7 @@ img {
 }
 
 .service-detail-img.clearing-bg {
-  background: linear-gradient(135deg, rgba(42,26,58,0.8) 0%, rgba(29,13,55,0.8) 100%), url('../images/clearing.jpg');
+  background: linear-gradient(135deg, rgba(42,26,58,0.2) 0%, rgba(29,13,55,0.2) 100%), url('../images/clearing.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1450,7 +1444,7 @@ img {
 }
 
 .service-detail-img.haulage-bg {
-  background: linear-gradient(135deg, rgba(58,42,26,0.8) 0%, rgba(55,45,13,0.8) 100%), url('../images/haulage.jpg');
+  background: linear-gradient(135deg, rgba(58,42,26,0.2) 0%, rgba(55,45,13,0.2) 100%), url('../images/haulage.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1462,7 +1456,7 @@ img {
 }
 
 .service-detail-img.oilgas-bg {
-  background: linear-gradient(135deg, rgba(26,26,46,0.8) 0%, rgba(22,33,62,0.8) 100%), url('../images/oil-gas.jpg');
+  background: linear-gradient(135deg, rgba(26,26,46,0.2) 0%, rgba(22,33,62,0.2) 100%), url('../images/oil-gas.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1474,7 +1468,7 @@ img {
 }
 
 .service-detail-img.air-bg {
-  background: linear-gradient(135deg, rgba(26,58,90,0.8) 0%, rgba(13,42,71,0.8) 100%), url('../images/air-freight.jpg');
+  background: linear-gradient(135deg, rgba(26,58,90,0.2) 0%, rgba(13,42,71,0.2) 100%), url('../images/air-freight.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1486,13 +1480,13 @@ img {
 }
 
 .service-detail-img.bonded-bg {
-  background: linear-gradient(135deg, rgba(42,58,26,0.8) 0%, rgba(29,55,13,0.8) 100%), url('../images/bonded-terminal.jpg');
+  background: linear-gradient(135deg, rgba(42,58,26,0.2) 0%, rgba(29,55,13,0.2) 100%), url('../images/bonded-terminal.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .service-detail-img.realestate-bg {
-  background: linear-gradient(135deg, rgba(42,26,13,0.85) 0%, rgba(55,33,22,0.85) 100%), url('../images/hero-terminal.jpg');
+  background: linear-gradient(135deg, rgba(42,26,13,0.25) 0%, rgba(55,33,22,0.25) 100%), url('../images/hero-terminal.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1510,7 +1504,7 @@ img {
 }
 
 .service-detail-img.landverification-bg {
-  background: linear-gradient(135deg, rgba(13,42,71,0.85) 0%, rgba(22,55,89,0.85) 100%), url('../images/hero-terminal.jpg');
+  background: linear-gradient(135deg, rgba(13,42,71,0.25) 0%, rgba(22,55,89,0.25) 100%), url('../images/hero-terminal.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1522,7 +1516,7 @@ img {
 }
 
 .service-detail-img.propertyacquisition-bg {
-  background: linear-gradient(135deg, rgba(42,58,13,0.85) 0%, rgba(55,71,22,0.85) 100%), url('../images/hero-terminal.jpg');
+  background: linear-gradient(135deg, rgba(42,58,13,0.25) 0%, rgba(55,71,22,0.25) 100%), url('../images/hero-terminal.jpg');
   background-size: cover;
   background-position: center;
 }
