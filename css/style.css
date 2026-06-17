@@ -1480,7 +1480,7 @@ img {
 }
 
 .service-detail-img.bonded-bg {
-  background: linear-gradient(135deg, rgba(42,58,26,0.2) 0%, rgba(29,55,13,0.2) 100%), url('../images/bonded-terminal.jpg');
+  background: linear-gradient(135deg, rgba(42,58,26,0.2) 0%, rgba(29,55,13,0.2) 100%), url('../images/wharf 2.webp');
   background-size: cover;
   background-position: center;
 }
