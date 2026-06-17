@@ -1622,7 +1622,7 @@ img {
 
 @media (max-width: 768px) {
   .hero {
-    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-secondary) 50%, #1a1a2e 100%), url('../images/hero-terminal.jpg');
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-secondary) 50%, #1a1a2e 100%), url('../images/fallback.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
